@@ -90,7 +90,7 @@ void initialize(double* const u1, double* const u0, const double dx,
      ux = 2*M_PI*cos(2*M_PI*x);
      uxx = -4.0*M_PI*M_PI*sin(2*M_PI*x);
      
-     u0[i] = u+u*ux*ux*dt+0.5*dt*dt*(u*(2*ux*ux+u*uxx));	//initial conditions
+     u0[i] = u+u*ux*dt+0.5*dt*dt*(u*(2*ux*ux+u*uxx));	//initial conditions
      
      u1[i] = sin(2*M_PI*x); 
 
